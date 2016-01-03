@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.faceoff"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/NoActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Tutorial"
+            android:label="@string/title_activity_tutorial" >
+        </activity>
+        <activity
+            android:name=".SinglePhone"
+            android:label="@string/title_activity_single_phone" >
+        </activity>
+        <activity
+            android:name=".CreateProfile"
+            android:label="@string/title_activity_create_profile" >
+        </activity>
+        <activity
+            android:name=".Player2"
+            android:label="@string/title_activity_player2" >
+        </activity>
+        <activity
+            android:name=".BaseFace"
+            android:label="@string/title_activity_base_face" >
+        </activity>
+        <activity
+            android:name=".BaseFaceTutorial"
+            android:label="@string/title_activity_base_face_tutorial" >
+        </activity>
+        <activity
+            android:name=".StartFaceOff"
+            android:label="@string/title_activity_start_face_off" >
+        </activity>
+        <activity
+            android:name=".Player1Offense"
+            android:label="@string/title_activity_player1_offense" >
+        </activity>
+        <activity
+            android:name=".Player2Defense"
+            android:label="@string/title_activity_player2_defense" >
+        </activity>
+        <activity
+            android:name=".Player2Offense"
+            android:label="@string/title_activity_player2_offense" >
+        </activity>
+        <activity
+            android:name=".Player1Defense"
+            android:label="@string/title_activity_player1_defense" >
+        </activity>
+        <activity
+            android:name=".FaceCompare"
+            android:label="@string/title_activity_face_compare" >
+        </activity>
+        <activity
+            android:name=".FaceCompare2"
+            android:label="@string/title_activity_face_compare2" >
+        </activity>
+         <activity
+            android:name=".Victory"
+            android:label="@string/title_activity_victory" >
+        </activity>
+         <activity
+            android:name=".Victory2"
+            android:label="@string/title_activity_victory2" >
+        </activity>
+    </application>
+
+</manifest>
